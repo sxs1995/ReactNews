@@ -19,7 +19,7 @@ export default class MobileIndex extends React.Component {
       slidesToShow: 1
     };
     return (
-      <div>
+      <div> 
         <MobileHeader />
         <Tabs>
           <TabPane tab="头条" key="1">
