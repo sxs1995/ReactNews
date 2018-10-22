@@ -55,7 +55,7 @@ export default class NewsContainer extends React.Component {
             <Tabs className="tabs_news">
               <TabPane tab="新闻" key="1">
                 <PCNewsBlock
-                  count={22}
+                  count={23}
                   type="top"
                   width="100%"
                   bordered="false"
@@ -63,8 +63,32 @@ export default class NewsContainer extends React.Component {
               </TabPane>
               <TabPane tab="国际" key="2">
                 <PCNewsBlock
-                  count={12}
+                  count={23}
                   type="guoji"
+                  width="100%"
+                  bordered="false"
+                />
+              </TabPane>
+              <TabPane tab="娱乐" key="3">
+                <PCNewsBlock
+                  count={23}
+                  type="yule"
+                  width="100%"
+                  bordered="false"
+                />
+              </TabPane>
+              <TabPane tab="社会" key="4">
+                <PCNewsBlock
+                  count={23}
+                  type="shehui"
+                  width="100%"
+                  bordered="false"
+                />
+              </TabPane>
+              <TabPane tab="体育" key="5">
+                <PCNewsBlock
+                  count={23}
+                  type="tiyu"
                   width="100%"
                   bordered="false"
                 />
@@ -87,7 +111,7 @@ export default class NewsContainer extends React.Component {
               />
             </div>
           </Col>
-          <Col span={2}>1</Col>
+          <Col span={2}></Col>
         </Row>
       </div>
     );

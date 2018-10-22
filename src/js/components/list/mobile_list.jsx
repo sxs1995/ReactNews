@@ -31,36 +31,31 @@ export default class PCNewsBlock extends React.Component {
             key={index}
             className="m_article list-item special_section clearfix"
           >
-            <Router>
-              <Link to={`detail/${newsItem.uniquekey}`}>
-                <div className="m_article_img">
-                  <img
-                    src={newsItem.thumbnail_pic_s}
-                    alt="{newsItem.title}"
-                  />
+            <Link to={`detail/${newsItem.uniquekey}`}>
+              <div className="m_article_img">
+                <img src={newsItem.thumbnail_pic_s} alt="{newsItem.title}" />
+              </div>
+              <div className="m_article_info">
+                <div className="m_article_title">
+                  <span>{newsItem.title}</span>
                 </div>
-                <div className="m_article_info">
-                    <div className="m_article_title">
-                        <span>{newsItem.title}</span>
-                    </div>
-                    <div className="m_article_desc clearfix">
-                        <div className="m_article_desc_l">
-                            <span className="m_article_channel">{newsItem.realtype}</span>
-                            <span className="m_article_time">{newsItem.date}</span>
-                        </div>
-                    </div>
+                <div className="m_article_desc clearfix">
+                  <div className="m_article_desc_l">
+                    <span className="m_article_channel">
+                      {newsItem.realtype}
+                    </span>
+                    <span className="m_article_time">{newsItem.date}</span>
+                  </div>
                 </div>
-              </Link>
-            </Router>
+              </div>
+            </Link>
           </section>
         ))
       : "";
     return (
       <div className="topNewsList">
         <Row>
-          <Col span={24}>
-            {newsList}
-          </Col>
+          <Col span={24}>{newsList}</Col>
         </Row>
       </div>
     );
