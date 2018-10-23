@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, BackTop } from "antd";
 import MovbileHeader from "../header/mobile_header";
 import MovbileFooter from "../footer/mobile_footer";
+import CommonComments from "../comment/common_comment";
 export default class PCNewsDetails extends React.Component {
   constructor() {
     super();
@@ -44,6 +45,7 @@ export default class PCNewsDetails extends React.Component {
                 className="articleContainer"
                 dangerouslySetInnerHTML={this.createMarkup()}
               />
+              <CommonComments uniquekey={this.props.match.params.uniquekey} />
             </Col>
           </Row>
           <MovbileFooter />

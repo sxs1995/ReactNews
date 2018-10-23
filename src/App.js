@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import PCIndex from "./js/components/pc_index";
 import MobileIndex from "./js/components/mobile_index";
 import MediaQuery from "react-responsive";

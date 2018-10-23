@@ -23,7 +23,7 @@ export default class NewsContainer extends React.Component {
     return (
       <div>
         <Row>
-          <Col span={2}>1</Col>
+          <Col span={2} />
           <Col span={20} className="container">
             <div className="leftContainer">
               <div className="carousel">
@@ -111,7 +111,7 @@ export default class NewsContainer extends React.Component {
               />
             </div>
           </Col>
-          <Col span={2}></Col>
+          <Col span={2} />
         </Row>
       </div>
     );

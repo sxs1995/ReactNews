@@ -1,8 +1,5 @@
 import React from "react";
 import {
-  Row,
-  Col,
-  Menu,
   Icon,
   Tabs,
   message,
@@ -12,8 +9,6 @@ import {
   Modal
 } from "antd";
 const imgLogo = require("../../../images/logo.png");
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 const FormItem = Form.Item;
 const TabPane = Tabs.TabPane;
 
