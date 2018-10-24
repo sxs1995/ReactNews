@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
-import PCHeader from "../header/pc_header";
-import PCFooter from "../footer/pc_footer";
+import MobileHeader from "../header/mobile_header";
+import MobileFooter from "../footer/mobile_footer";
 import { Row, Col, Modal, Menu, Icon } from "antd";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {
@@ -18,11 +18,11 @@ import {
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 const TabPane = Tabs.TabPane;
-export default class PCUserCenter extends React.Component {
+export default class MobileUserCenter extends React.Component {
   render() {
     return (
       <div>
-        <PCHeader />
+        <MobileHeader />
         <Row>
           <Col span={2} />
           <Col span={20}>
@@ -40,7 +40,7 @@ export default class PCUserCenter extends React.Component {
           </Col>
           <Col span={2} />
         </Row>
-        <PCFooter />
+        <MobileFooter />
       </div>
     );
   }

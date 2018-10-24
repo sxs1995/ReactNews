@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { Menu, Icon, Tabs, message, Form, Input, Button, Modal } from "antd";
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const imgLogo = require("../../../images/logo.png");
 const FormItem = Form.Item;
 const TabPane = Tabs.TabPane;
@@ -94,9 +94,11 @@ class PCHeader extends React.Component {
           {this.state.userNickName}
         </Button>
         &nbsp;&nbsp;
-        <Button type="dashed" htmlType="button">
-          个人中心
-        </Button>
+        <Link target="_blank" to={`/usercenter`}>
+          <Button type="dashed" htmlType="button">
+            个人中心
+          </Button>
+        </Link>
         &nbsp;&nbsp;
         <Button type="ghost" htmlType="button" onClick={this.logout.bind(this)}>
           退出
