@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import PCNewsBlock from "./pc_newsblock";
 import PCNewsImage from "./pc_newsimage";
+import PCProduct from "./pc_product";
 import carousel_1 from "../../../images/carousel_1.jpg";
 import carousel_2 from "../../../images/carousel_2.jpg";
 import carousel_3 from "../../../images/carousel_3.jpg";
@@ -92,6 +93,11 @@ export default class NewsContainer extends React.Component {
                   width="100%"
                   bordered="false"
                 />
+              </TabPane>
+            </Tabs>
+            <Tabs className="tabs_product">
+              <TabPane tab="ReactNews 产品" key="1">
+                <PCProduct />
               </TabPane>
             </Tabs>
             <div>
